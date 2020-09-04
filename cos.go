@@ -24,12 +24,12 @@ const (
 	Version               = "0.13.0"
 	userAgent             = "go-cos/" + Version
 	contentTypeXML        = "application/xml"
-	defaultServiceBaseURL = "https://service.cos.myqcloud.com"
+	defaultServiceBaseURL = "https://service.cos.shanghai.tce.yonghuicloud.cn"
 )
 
 var bucketURLTemplate = template.Must(
 	template.New("bucketURLFormat").Parse(
-		"{{.Scheme}}://{{.BucketName}}-{{.AppID}}.cos.{{.Region}}.myqcloud.com",
+		"{{.Scheme}}://{{.BucketName}}-{{.AppID}}.cos.{{.Region}}.tce.yonghuicloud.cn",
 	),
 )
 
