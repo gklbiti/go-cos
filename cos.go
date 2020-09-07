@@ -24,7 +24,7 @@ const (
 	Version               = "0.13.0"
 	userAgent             = "go-cos/" + Version
 	contentTypeXML        = "application/xml"
-	defaultServiceBaseURL = "https://service.cos.shanghai.tce.yonghuicloud.cn"
+	defaultServiceBaseURL = "http://service.cos.shanghai.tce.yonghuicloud.cn"
 )
 
 var bucketURLTemplate = template.Must(
